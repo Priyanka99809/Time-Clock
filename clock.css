@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+        /* display:inline; */
+        background-color: rgb(52, 21, 21);
+
+        color:#ffffff;
+        height:5vh;
+        width:100vw;
+        padding:16px;
+        /* background-image: url("images/clock.png"); */
+        max-width=100%;
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position: top left;
+        position:sticky;
+        top:0;
+        display:flex;
+}
+ li{
+    display:inline;
+    padding:20px;
+    font-size: 4vh;
+    color:white;
+    /* display: flex;
+  justify-content: space-between; */
+
+} 
+a{
+    display:inline;
+    padding:20px;
+    font-size: 4vh;
+    color:white;
+    text-decoration: none;
+}
+h2{
+    text-align:center;
+    margin: 10px;
+    padding:10px;
+}
+.box{
+    margin: 30px;
+    padding:40px;
+    border:2px solid black;
+    /* width:80vw; */
+    height:45vh;
+    background-color: black;
+    color:white;
+    text-align: center;
+    font-size: 5vh;
+}
+@media (max-width: 900px) 
+{
+    .box{
+         height:90%;
+        font-size:3vh;
+    }  
+}
+@media (min-width: 900px) 
+{
+    .box{
+        height:90%;
+        font-size:5vh;
+    }  
+}
+    
+ body {
+    background-image: url("india2.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: top left;
+    /* background-size: 100% 100%; */
+}
+.nav-bar {
+    display: flex;
+    min-height: 40px;
+    justify-content: space-between;
+}
+
+.list{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* gap: 20px; */
+}
+.country{
+    transition: 0.7s ease;
+}
+
+.country:hover {
+    font-weight: bold;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+
+}
+
+.bar {
+    display: block;
+    width: 30px;
+    height: 5px;
+    /* margin: 1px auto; */
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+@media(max-width:1220px) {
+    .hamburger{
+        display: block;
+        /* height:100vh; */
+
+    }
+   /* activated when clicked on hamburger's nth child eg 1 2 3 - convert --- to x  */
+    .hamburger.active.bar:nth-child(1) {
+
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active.bar:nth-child(2) {
+        opacity: 0; /* remove middle line */
+    }
+
+    .hamburger.active.bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .list {
+        position: fixed;
+        left: -100%;
+        top: 40px;
+        /* gap: 0; */
+        flex-direction: column;
+        background-color: black;
+        text-align: center;
+        transition: 0.3s;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    /*.list-item{
+        margin: 16px 0;
+     } */
+    .list.active {
+        left: 0;
+
+    }
+
+}
