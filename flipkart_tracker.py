@@ -218,7 +218,7 @@ async def main():
                 if available:
 
                     send_telegram(
-                        "🚨🍎 iPHONE 17e AVAILABLE!\n\n"
+                        "🚨🍎 iPHONE 17 AVAILABLE!\n\n"
                         f"📱 {product['name']}\n"
                         f"📍 Delivery pincode: {PINCODE}\n\n"
                         "🛒 BUY NOW:\n"
