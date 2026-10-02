@@ -179,16 +179,12 @@ async def check_product(page, product):
     print("Add to Cart:", cart_visible)
     print("Delivery information:", delivery_found)
 
-    if cart_visible or buy_visible:
-        print("PURCHASE OPTION FOUND:", product["name"])
+    if buy_visible or cart_visible:
+        print("AVAILABLE:", product["name"])
+        return True
 
-    if delivery_found:
-        print("DELIVERY INFORMATION FOUND")
-
-    return True
-
-    print("UNKNOWN:", product["name"])
-    return None
+    print("NOT AVAILABLE:", product["name"])
+    return False
 
 
 async def main():
