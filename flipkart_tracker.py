@@ -4,40 +4,40 @@ import requests
 from playwright.async_api import async_playwright
 
 
-# PRODUCTS = [
-#     {
-#         "name": "iPhone 17 Sage 256GB",
-#         "url": "https://www.flipkart.com/apple-iphone-17-sage-256-gb/p/itm410e85a5f1745?pid=MOBHQV9YZPQXFFGM&marketplace=FLIPKART",
-#     },
-#     {
-#         "name": "iPhone 17 Black 256GB",
-#         "url": "https://www.flipkart.com/apple-iphone-17-black-256-gb/p/itmc61b40459dd98",
-#     },
-#     {
-#         "name": "iPhone 17 White 256GB",
-#         "url": "https://www.flipkart.com/apple-iphone-17-white-256-gb/p/itm68ad8410784c7",
-#     },
-#     {
-#         "name": "iPhone 17 Mist Blue 256GB",
-#         "url": "https://www.flipkart.com/apple-iphone-17-mist-blue-256-gb/p/itmfd8c16e287599",
-#     },
-#     {
-#         "name": "iPhone 17 Lavender 256GB",
-#         "url": "https://www.flipkart.com/apple-iphone-17-lavender-256-gb/p/itm5c650337c09ee",
-#     },
-# ]
 PRODUCTS = [
     {
-        "name": "TEST - Klexio Women Heels",
-        "url": (
-            "https://www.flipkart.com/klexio-women-heels/"
-            "p/itm1c8f0bbe8e404"
-            "?pid=SNDHCDB7VMGNBG6Z"
-            "&lid=LSTSNDHCDB7VMGNBG6ZIXKGAM"
-            "&marketplace=FLIPKART"
-        ),
+        "name": "iPhone 17 Sage 256GB",
+        "url": "https://www.flipkart.com/apple-iphone-17-sage-256-gb/p/itm410e85a5f1745?pid=MOBHQV9YZPQXFFGM&marketplace=FLIPKART",
+    },
+    {
+        "name": "iPhone 17 Black 256GB",
+        "url": "https://www.flipkart.com/apple-iphone-17-black-256-gb/p/itmc61b40459dd98",
+    },
+    {
+        "name": "iPhone 17 White 256GB",
+        "url": "https://www.flipkart.com/apple-iphone-17-white-256-gb/p/itm68ad8410784c7",
+    },
+    {
+        "name": "iPhone 17 Mist Blue 256GB",
+        "url": "https://www.flipkart.com/apple-iphone-17-mist-blue-256-gb/p/itmfd8c16e287599",
+    },
+    {
+        "name": "iPhone 17 Lavender 256GB",
+        "url": "https://www.flipkart.com/apple-iphone-17-lavender-256-gb/p/itm5c650337c09ee",
     },
 ]
+# PRODUCTS = [
+#     {
+#         "name": "TEST - Klexio Women Heels",
+#         "url": (
+#             "https://www.flipkart.com/klexio-women-heels/"
+#             "p/itm1c8f0bbe8e404"
+#             "?pid=SNDHCDB7VMGNBG6Z"
+#             "&lid=LSTSNDHCDB7VMGNBG6ZIXKGAM"
+#             "&marketplace=FLIPKART"
+#         ),
+#     },
+# ]
 
 PINCODE = "110041"
 
